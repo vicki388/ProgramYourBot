@@ -26,6 +26,21 @@ def Square(x=1):
 	x = int(x)
 	return render_template('square.html', x=x)
 
+@app.route('/robot/trick/')
+def Trick(x=1):
+	x = int(x)
+	return render_template('trick.html', x=x)
+
+@app.route('/robot/hexagon/')
+def Hexagon(x=1):
+	x = int(x)
+	return render_template('hexagon.html', x=x)
+
+@app.route('/robot/super/')
+def Super(x=1):
+	x = int(x)
+	return render_template('super.html', x=x)
+
 if __name__ == '__main__':
 	app.debug = True
 	app.run()
