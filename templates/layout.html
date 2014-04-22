@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script></head>
+<title>Robot</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+
+<body>
+<div class=page>
+  <h1>Program Your Bot</h1>
+
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+a
+
+  {% endfor %}
+  {% block body %}{% endblock %}
+</div>
+  <div class="container">
+
+  <!--panels-->
+  <div class="panel panel-default">
+    <div class="panel-body">
+
+      <div class="row" id="tricks"> 
+        <div class = "col-md-3"> 
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Straight Line</h3>
+              <img src="http://tam.colorado.edu/stamp/Images/SmallBW/IMG_9504.jpg" class="img-rounded" alt="image">
+              <p>Build the Straigh Line Code</p>
+              <!-- Standard button -->
+              <button type="button" class="btn btn-default">Go</button>
+            </div>
+          </div> <!--panel-default-->
+        </div> <!--col-md-3-->
+        <div class = "col-md-3"> 
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Square</h3>
+              <img src="http://tam.colorado.edu/stamp/Images/SmallBW/IMG_9504.jpg" class="img-rounded" alt="image">
+              <p>Build the Square Code</p>
+              <!-- Standard button -->
+              <button type="button" class="btn btn-default">Go</button>
+            </div>  
+          </div> <!--panel-default-->
+        </div> <!--col-md-3-->
+        <div class = "col-md-3"> 
+          <div class="panel panel-default">
+            <div class="panel-body">
+                 <h3>Trick</h3>
+              <img src="http://tam.colorado.edu/stamp/Images/SmallBW/IMG_9504.jpg" class="img-rounded" alt="image">
+              <p></p>
+              <!-- Standard button -->
+              <button type="button" class="btn btn-default">Go</button>
+            </div>  
+          </div> <!--panel-default-->
+        </div> <!--col-md-3-->
+        <div class = "col-md-3"> 
+          <div class="panel panel-default">
+            <div class="panel-body">
+                 <h3>Hexagon</h3>
+              <img src="http://tam.colorado.edu/stamp/Images/SmallBW/IMG_9504.jpg" class="img-rounded" alt="image">
+              <p></p>
+              <!-- Standard button -->
+              <button type="button" class="btn btn-default">Go</button>
+            </div>  
+          </div> <!--panel-default-->
+        </div> <!--col-md-3-->
+        <div class = "col-md-3"> 
+          <div class="panel panel-default">
+            <div class="panel-body">
+                 <h3>Super Trick</h3>
+              <img src="http://tam.colorado.edu/stamp/Images/SmallBW/IMG_9504.jpg" class="img-rounded" alt="image">
+              <p></p>
+              <!-- Standard button -->
+              <button type="button" class="btn btn-default">Go</button>
+            </div>  
+          </div> <!--panel-default-->
+        </div> <!--col-md-3-->
+      </div> <!--resume items-->
+    </div> <!--Panel Body-->
+  </div> <!--Panel Default-->
+</div>
+</body>
+</html>
+

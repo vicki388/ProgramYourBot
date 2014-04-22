@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Robot - Rapid Prototyping 2014!'
+    return render_template('layout.html')
 
 @app.route('/hello/')
 @app.route('/hello/<name>')
